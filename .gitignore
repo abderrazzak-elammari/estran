@@ -1,0 +1,7 @@
+build/
+estran
+meshes/
+results/
+figures/frames/
+*.log
+__pycache__/

@@ -1,0 +1,10 @@
+! Thacker (1981) planar surface in a paraboloid, three periods
+! (T = 2 pi a / sqrt(2 g h0) = 4.48570 s), output every eighth of a period.
+&run
+  case_name = 'thacker'
+  mesh_file = 'meshes/thacker.msh'
+  out_dir   = 'results/thacker'
+  prefix    = 'thacker'
+  t_end     = 13.457104396399
+  dt_out    = 0.560712683183
+/

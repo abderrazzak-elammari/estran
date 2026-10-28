@@ -1,0 +1,10 @@
+! Lake at rest over the bump: nothing may move.
+&run
+  case_name = 'bump'
+  mesh_file = 'meshes/bump.msh'
+  out_dir   = 'results/lake'
+  prefix    = 'lake'
+  perturb   = 0.0
+  t_end     = 1.0
+  dt_out    = 0.5
+/

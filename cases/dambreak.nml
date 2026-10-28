@@ -1,0 +1,10 @@
+! Stoker dam break, 1 m upstream, 0.1 m downstream, wet bed.
+&run
+  case_name = 'dambreak'
+  mesh_file = 'meshes/dambreak_3.msh'
+  out_dir   = 'results/dambreak'
+  prefix    = 'dambreak'
+  h_l = 1.0, h_r = 0.1, x_dam = 25.0
+  t_end     = 3.0
+  dt_out    = 1.0
+/

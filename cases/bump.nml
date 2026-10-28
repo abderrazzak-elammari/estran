@@ -1,0 +1,10 @@
+! LeVeque (1998): a 1 cm pulse released at x = 0.05-0.15 m crosses the bump.
+&run
+  case_name = 'bump'
+  mesh_file = 'meshes/bump.msh'
+  out_dir   = 'results/bump'
+  prefix    = 'bump'
+  perturb   = 0.01
+  t_end     = 0.6
+  dt_out    = 0.12
+/

@@ -1,0 +1,16 @@
+! Briggs et al. (1995) case C, H/d = 0.181. Gauges 1-4 (incident wave),
+! 6 and 9 (front of the island), 16 (side), 22 (lee side).
+&run
+  case_name = 'island'
+  mesh_file = 'meshes/island.msh'
+  out_dir   = 'results/island_c'
+  prefix    = 'island'
+  amp       = 0.0579
+  depth     = 0.32
+  t_end     = 20.0
+  dt_out    = 0.5
+  dt_gauge  = 0.04
+  ng = 8
+  gx = 7.56, 7.56, 7.56, 7.56, 9.36, 10.36, 12.96, 15.56
+  gy = 16.05, 14.55, 13.05, 11.55, 13.80, 13.80, 11.22, 13.80
+/

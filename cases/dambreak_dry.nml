@@ -1,0 +1,10 @@
+! Ritter dam break: same channel, dry downstream.
+&run
+  case_name = 'dambreak'
+  mesh_file = 'meshes/dambreak_3.msh'
+  out_dir   = 'results/dambreak_dry'
+  prefix    = 'ritter'
+  h_l = 1.0, h_r = 0.0, x_dam = 25.0
+  t_end     = 3.0
+  dt_out    = 1.0
+/
