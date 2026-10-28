@@ -1,4 +1,7 @@
 # estran
+
+[![tests](https://github.com/abderrazzak-elammari/estran/actions/workflows/tests.yml/badge.svg)](https://github.com/abderrazzak-elammari/estran/actions/workflows/tests.yml)
+
 *Estran*: French for the foreshore, the strip of shore that the tide covers and uncovers.
 
 Shallow water equations on unstructured triangular meshes, in Fortran 2018

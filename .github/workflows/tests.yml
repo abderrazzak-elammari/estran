@@ -1,0 +1,23 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-24.04
+    env:
+      OMPI_MCA_btl_vader_single_copy_mechanism: none
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install compiler, MPI and Gmsh
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gfortran libopenmpi-dev openmpi-bin gmsh python3-numpy python3-matplotlib
+      - name: Build
+        run: make
+      - name: Meshes
+        run: make meshes
+      - name: Tests on 2 ranks
+        run: make test NP=2 MPIRUN="mpirun --oversubscribe"
